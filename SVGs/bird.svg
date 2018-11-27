@@ -3,36 +3,54 @@
      width="300" height="200"
      xmlns="http://www.w3.org/2000/svg">
 
+<linearGradient id="Gradient" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="50%" stop-color="yellow" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="blue"/>
+</linearGradient>
+<linearGradient id="Radial" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="50%" stop-color="yellow" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="blue"/>
+</linearGradient>
+
 <rect x="0" y="0" width="500" height="500" fill="black"></rect>
 
-<line x1="300" y1="75" x2="50" y2="375" stroke="green" fill="red" stroke-width="2"></line>
+<polyline points="300 75 50 375" fill="url(#Gradient)" stroke-width="1"></polyline>
 
-<path d="M300 75 C 300 75, 475 100, 325 175 C 325 175, 400 400, 125 287" 
-    stroke="green" fill="red" stroke-width="2">
+<!-- body -->
+<path d="M300 75 C 300 75, 475 100, 325 175 C 325 175, 400 400, 123 287" 
+    stroke="black" fill="url(#Gradient)" stroke-width="1">
 </path>
 
-<line x1="50" y1="375" x2="150" y2="296" stroke="green" fill="red" stroke-width="2"></line>
+<!-- feet -->
+<!-- <polyline points="230 317 200 330 230 350" stroke="green" stroke-width="1"></polyline>
 
-<line x1="230" y1="317" x2="230" y2="400" stroke="green" fill="red" stroke-width="1"></line>
-<line x1="230" y1="400" x2="240" y2="410" stroke="green"  stroke-width="1" fill="red"></line>
-<line x1="230" y1="400" x2="220" y2="410" stroke="green" fill="red" stroke-width="1"></line>
+<line x1="230" y1="317" x2="230" y2="400" stroke="url(#Gradient)" stroke-width="1"></line>
+<line x1="230" y1="400" x2="240" y2="410" stroke="url(#Gradient)" stroke-width="1"></line>
+<line x1="230" y1="400" x2="220" y2="410" stroke="url(#Gradient)" stroke-width="1"></line>
 
-<line x1="255" y1="319" x2="255" y2="400" stroke="green" fill="red" stroke-width="1"></line>
-<line x1="255" y1="400" x2="265" y2="410" stroke="green" stroke-width="1" fill="red"></line>
-<line x1="255" y1="400" x2="245" y2="410" stroke="green" stroke-width="1" fill="red"></line>
+<line x1="255" y1="319" x2="255" y2="400" stroke="url(#Gradient)" stroke-width="1"></line>
+<line x1="255" y1="350" x2="265" y2="358" stroke="url(#Gradient)" stroke-width="1"></line>
+<line x1="255" y1="350" x2="245" y2="358" stroke="url(#Gradient)" stroke-width="1"></line> -->
 
-<path d="M385 120 L 410 130, 385 130" stroke="green" fill="yellow" stroke-width="2"></path>
 
-<path d="M265 200 L 50 165, C 50 165, 275 400, 265 200, M 137 270, 
-    C 130 275, 100 250, 50 185 L 50 185, 80 195" stroke="green" fill="red" stroke-width="1">
+<!-- beak -->
+<path d="M385 120 L 410 130, 385 130 A 5 5 -90 0 1 385 120"
+fill="yellow" stroke-width="1"  stroke-linejoin="miter" stroke-miterlimit="90">
 </path>
 
-<!-- <circle cx="325" cy="100" r="5.5" stroke="green" stroke-width="1"></circle>
-<circle cx="345" cy="100" r="5.5" stroke="green" stroke-width="1"></circle> -->
-<path d="M325 110, C 338 135, 335 115, 350 110" stroke="green" stroke-width="2" fill="red"></path>
+<!-- wings -->
+<path d="M265 175 L 50 110, C 50 165, 250 350, 265 175" 
+    fill="url(#Gradient)" stroke-width="1">
+</path>
+
+<!-- tail -->
+<path d="M130 270, C 130 275, 100 250, 40 200 L 40 200, 70 200" 
+    fill="url(#Gradient)" stroke-width="1">
+</path>
 
 
-
-
+<path d="M325 110, C 338 135, 335 115, 350 110" stroke="black" fill-opacity="0" stroke-width="2"></path>
 
 </svg>
