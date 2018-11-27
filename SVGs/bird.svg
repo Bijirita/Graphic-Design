@@ -8,19 +8,19 @@
         <stop offset="50%" stop-color="yellow" stop-opacity="0.5"/>
         <stop offset="100%" stop-color="blue"/>
 </linearGradient>
-<linearGradient id="Radial" x1="0" x2="0" y1="0" y2="1">
+<!-- <radialGradient id="Radial" x1="0" x2="0" y1="0" y2="1">
         <stop offset="0%" stop-color="red"/>
         <stop offset="50%" stop-color="yellow" stop-opacity="0.5"/>
         <stop offset="100%" stop-color="blue"/>
-</linearGradient>
+</radialGradient> -->
 
 <rect x="0" y="0" width="500" height="500" fill="black"></rect>
 
-<polyline points="300 75 50 375" fill="url(#Gradient)" stroke-width="1"></polyline>
+<!-- <polyline points="300 75 123 287" fill="url(#Gradient)" stroke="green" stroke-width="1"></polyline> -->
 
 <!-- body -->
-<path d="M300 75 C 300 75, 475 100, 325 175 C 325 175, 400 400, 123 287" 
-    stroke="black" fill="url(#Gradient)" stroke-width="1">
+<path d="M300 75 C 300 75, 475 100, 325 175 C 325 175, 375 325, 123 287 C 123 287, 200 170, 300 75" 
+     fill="url(#Gradient)" stroke-width="1">
 </path>
 
 <!-- feet -->
@@ -37,20 +37,22 @@
 
 <!-- beak -->
 <path d="M385 120 L 410 130, 385 130 A 5 5 -90 0 1 385 120"
-fill="yellow" stroke-width="1"  stroke-linejoin="miter" stroke-miterlimit="90">
+fill="yellow" fill-opacity="0.8" stroke-width="1"  stroke-linejoin="miter" stroke-miterlimit="90">
 </path>
 
 <!-- wings -->
-<path d="M265 175 L 50 110, C 50 165, 250 350, 265 175" 
+<path d="M265 175 C 265 175, 325 120, 30 80 C 50 165, 250 300, 265 175" 
     fill="url(#Gradient)" stroke-width="1">
 </path>
 
 <!-- tail -->
-<path d="M130 270, C 130 275, 100 250, 40 200 L 40 200, 70 200" 
+<path d="M130 270, C 130 270, 100 250, 40 200 C 40 200, 115 260 ,70 200" 
     fill="url(#Gradient)" stroke-width="1">
 </path>
 
-
-<path d="M325 110, C 338 135, 335 115, 350 110" stroke="black" fill-opacity="0" stroke-width="2"></path>
+<!-- eye -->
+<path d="M325 110, C 338 135, 335 115, 350 110" stroke="black" fill-opacity="0" 
+    stroke-width="2">
+</path>
 
 </svg>
