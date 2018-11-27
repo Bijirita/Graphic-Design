@@ -19,7 +19,7 @@
 <!-- <polyline points="300 75 123 287" fill="url(#Gradient)" stroke="green" stroke-width="1"></polyline> -->
 
 <!-- body -->
-<path d="M300 75 C 300 75, 475 100, 325 175 C 325 175, 375 325, 123 287 C 123 287, 200 170, 300 75" 
+<path d="M300 75 C 300 75, 455 30, 325 150 C 325 150, 375 325, 123 287 C 123 287, 200 170, 300 75" 
      fill="url(#Gradient)" stroke-width="1">
 </path>
 
@@ -36,13 +36,13 @@
 
 
 <!-- beak -->
-<path d="M385 120 L 410 130, 385 130 A 5 5 -90 0 1 385 120"
-fill="yellow" fill-opacity="0.8" stroke-width="1"  stroke-linejoin="miter" stroke-miterlimit="90">
+<path d="M370 70 L460 36, 375 75 A 5 15 75 0 1 370 70"
+    fill="yellow"  fill-opacity="0.6" stroke-width="1">
 </path>
 
 <!-- wings -->
 <path d="M265 175 C 265 175, 325 120, 30 80 C 50 165, 250 300, 265 175" 
-    fill="url(#Gradient)" stroke-width="1">
+    fill="url(#Gradient)"  fill-opacity="1" stroke-width="1">
 </path>
 
 <!-- tail -->
@@ -51,7 +51,7 @@ fill="yellow" fill-opacity="0.8" stroke-width="1"  stroke-linejoin="miter" strok
 </path>
 
 <!-- eye -->
-<path d="M325 110, C 338 135, 335 115, 350 110" stroke="black" fill-opacity="0" 
+<path d="M325 90, C 325 90, 350 115, 335 85" stroke="black" fill-opacity="0" 
     stroke-width="2">
 </path>
 
